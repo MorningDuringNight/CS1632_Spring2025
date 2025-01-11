@@ -7,6 +7,7 @@ import java.util.NoSuchElementException;
 public class SortedCollection {
 	// TODO: Add member variables or methods as needed
 	int smallest;
+	//checking changes
 	LinkedList<Integer> coll = new LinkedList<>();
 	/**
 	 * Adds the number n to the collection.
