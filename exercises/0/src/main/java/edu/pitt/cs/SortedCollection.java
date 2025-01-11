@@ -73,7 +73,7 @@ public class SortedCollection {
 			//try to convert to int
 			try {
 				saving = Integer.parseInt(args[j]);
-				collection.add(saving);
+				//collection.add(saving);
 			} catch (Exception e) {
 				//if not, and gives error die
 				showUsage();
