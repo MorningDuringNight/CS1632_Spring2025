@@ -33,12 +33,14 @@ public class SortedCollection {
 			throw new NoSuchElementException();
 		}
 		int tempSmall = Integer.MAX_VALUE;
+		int location = Integer.MAX_VALUE;
 		for (int k = 0; k < coll.size(); k++) {
 			if (coll.get(k) < tempSmall) {
+				location = k;
 				tempSmall = coll.get(k);	
 			}
 		}
-
+		coll.remove(location);
 		return tempSmall;
 	}
 
