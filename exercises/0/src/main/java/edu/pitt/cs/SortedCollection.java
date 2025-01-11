@@ -1,19 +1,22 @@
 package edu.pitt.cs;
 
 //TODO: Import libraries as needed
+import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class SortedCollection {
 	// TODO: Add member variables or methods as needed
-
+	int smallest;
+	LinkedList<Integer> coll = new LinkedList<>();
 	/**
 	 * Adds the number n to the collection.
 	 * 
-	 * @param n the number to add to the collection
+	 * @param n the number to add to the collection--mv
 	 * @return always returns true
 	 */
 	public boolean add(int n) {
 		// TODO: Implement
+		coll.add(n);
 		return true;
 	}
 
@@ -25,7 +28,17 @@ public class SortedCollection {
 	 */
 	public int remove() throws NoSuchElementException {
 		// TODO: Implement
-		return 0;
+		if (coll.isEmpty()) {
+			throw new NoSuchElementException();
+		}
+		int tempSmall = Integer.MAX_VALUE;
+		for (int k = 0; k < coll.size(); k++) {
+			if (coll.get(k) < tempSmall) {
+				tempSmall = coll.get(k);	
+			}
+		}
+
+		return tempSmall;
 	}
 
 	/**
@@ -50,7 +63,23 @@ public class SortedCollection {
 		
 		// TODO: add numbers in commandline arguments to collection using the add(int) method.
 		// If any commandline argument is not a number, call showUsage() and return.
-		
+		//find the commandline arguements
+		for (int j = 0; j < args.length; j++) {
+			//save temp value
+			int saving;
+			//try to convert to int
+			try {
+				saving = Integer.parseInt(args[j]);
+				collection.add(saving);
+			} catch (Exception e) {
+				//if not, and gives error die
+				showUsage();
+				return;
+			}
+			//adds to collection
+			collection.add(saving);
+		}
+
 		System.out.print("sorted: ");
 		for (int i = 0; i < args.length; i++) {
 			int num = collection.remove();
