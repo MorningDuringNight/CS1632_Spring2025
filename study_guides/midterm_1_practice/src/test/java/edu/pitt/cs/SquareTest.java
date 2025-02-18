@@ -1,12 +1,19 @@
 package edu.pitt.cs;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
 import org.mockito.*;
 
 import org.junit.Test;
 
 public class SquareTest {
 
+
+	Square squ;
+	Number mun;
 	/**
 	 * Write an integration test for setSquared.
 	 * 
@@ -20,7 +27,11 @@ public class SquareTest {
 	@Test
 	public void testSetSquaredIntegration() {
 		// TODO: Fill in!
-		fail();
+		squ = new Square();
+		mun = new Number();
+
+		squ.setSquared(mun, 3);
+		assertEquals(9, mun.getVal());
 	}
 
 	/**
@@ -36,6 +47,12 @@ public class SquareTest {
 	@Test
 	public void testSetSquaredUnit() {
 		// TODO: Fill in!
-		fail();
+		squ = new Square();
+		mun = mock(Number.class);
+		Mockito.when(mun.getVal()).thenReturn(9);
+
+		squ.setSquared(mun, 3);
+		
+		verify(mun,times(1)).setVal(9);
 	}
 }
