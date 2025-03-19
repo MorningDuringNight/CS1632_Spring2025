@@ -81,7 +81,6 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * Class 1
   * Lecture: Performance Testing (READING: AFIST, Chapter 19)
   * Assignments due before class
-    * Deliverable 2
     * Listen to Writing Testable Code Lecture (READING: AFIST, Chapter 16)
 
 * Class 2
@@ -93,11 +92,11 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 1
   * Lecture: Stochastic and Property-Based Testing Lecture (READING: AFIST, Chapter 18)
+  * Assignments due before class
+    * Deliverable 2
 
 * Class 2
   * In-class exercise: [Supplementary Exercise 2: Property-based Testing](exercises/Supplement2)
-  * Assignments due before class
-    * Listen to Stochastic and Property-Based Testing Lecture (READING: AFIST, Chapter 18)
 
 ## WEEK 9 (Week of 3 MAR)
 
@@ -156,6 +155,12 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
   * Lecture: Security Testing (READING: AFIST, Chapter 20)
 
 ## WEEK 15 (Week of 14 APR)
+
+* April 15, 1:00PM - 2:15PM: [Aerotech](https://www.aerotech.com/) guest lecture
+  * Speaker: Nate Homitsky, Vice President of Information [LinkedIn](https://www.linkedin.com/in/nate-homitsky-6912a5a3/)
+  * Speaker: Ross Kabus, Software Engineering Team Lead [LinkedIn](https://www.linkedin.com/in/rkabus/)
+
+* April 17, 4:00PM - 5:15PM: [CGI](https://www.cgi.com/) guest lecture
 
 * Industry Guest Lectures (TBD)
 
